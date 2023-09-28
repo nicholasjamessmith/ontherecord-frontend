@@ -11,9 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }*/
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Nunito&display=swap');
+
 h1{
-text-align: center;
+  text-align: center;
+  /*font-family: 'Arvo', serif;*/
+  font-family: 'Bebas Neue', sans-serif;
 }
+h2, h4 {
+  font-family: 'Nunito';
+}
+
 body {
   background-color:whitesmoke;
   color: navy;
