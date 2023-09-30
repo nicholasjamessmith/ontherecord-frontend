@@ -23,7 +23,27 @@ h2, h4 {
   font-family: 'Nunito';
 }
 
+h4{
+  margin: auto;
+  text-align: center;
+}
+
 body {
   background-color:whitesmoke;
   color: navy;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.review {
+  border: 2px solid black;
+  /*display: grid;
+  grid-template-columns: (1fr 1fr);
+  gap: .5em;
+  text-align: center;
+  margin: 2em;*/
 }
