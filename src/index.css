@@ -23,17 +23,21 @@ h1 {
 h2 {
   text-align: center;
 }
-h2, h4, p, .link {
+
+h2,
+h4,
+p,
+.link {
   font-family: 'Nunito';
 }
 
-h4{
+h4 {
   margin: auto;
   text-align: center;
 }
 
 body {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   color: navy;
 }
 
@@ -41,15 +45,17 @@ body {
   text-align: center;
 }*/
 
-.input, .update {
+.input,
+.update {
   display: block;
   margin: .7em auto;
   border-radius: 3px;
   /*padding: .3em;*/
-  width:18em
+  width: 18em
 }
 
-#submitBtn, .updateBtn {
+#submitBtn,
+.updateBtn {
   background-color: white;
   color: black;
   /*border: 2px solid navy;*/
@@ -60,19 +66,22 @@ body {
   color: black;
   /*border: 2px solid maroon;*/
 }
+
 .delete:hover {
   background-color: red;
   color: white;
 }
 
-#submitBtn:hover, .updateBtn:hover {
+#submitBtn:hover,
+.updateBtn:hover {
   background-color: navy;
-  color:white;
+  color: white;
 }
 
 .box {
   display: inline-grid;
   margin: 2em;
+
 }
 
 .review {
@@ -82,10 +91,13 @@ body {
   gap: .5em;
   text-align: center;
   margin: 2em;*/
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .show {
-text-align: center;
+  text-align: center;
+  margin-top: 10%;
 }
 
 button {
