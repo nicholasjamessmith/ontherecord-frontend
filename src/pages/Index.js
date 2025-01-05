@@ -5,6 +5,7 @@ function Index(props) {
   const reviews = useLoaderData()
   return <>
     <h1>On The Record__!</h1>
+    <h1>Hello, World!</h1>
     <h2>Review Something...</h2>
     {/*<div className="form">*/}
     <Form method="post" action="/create">
