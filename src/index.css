@@ -1,8 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   text-align: center;
   margin: 0px 20px 200px 20px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h2 {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  color: navy
+}
+
+/*.input {
+  border: 1px solid rgba(0, 0, 0, .25);
+}*/
+
+.input,
+.update,
+.updateBtn,
+.deleteBtn {
+  border: 1px solid rgba(0, 0, 0, .25);
+  display: block;
+  margin: .5em auto;
+  border-radius: 3px;
+  padding: .5em;
+  width: 18em
 }
 
 /*
@@ -51,10 +84,54 @@ The name and artist should be at the same height positioned at the bottom of eac
 }
 
 .review-details {
-  /*position: absolute;*/
-  /*bottom: 10px;*/
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  /*width: 100%;*/
+  color: rgba(1, 1, 122, .75);
+}
+
+.show {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.review-title,
+.review-artist {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitBtn,
+.updateBtn,
+.deleteBtn {
+  background-color: white;
+  color: black;
+  /*border: 2px solid navy;*/
+}
+
+.updateBtn:hover {
+  background-color: rgba(0, 0, 600, .75);
+  color: white;
+}
+
+#submitBtn:hover {
+  background-color: rgba(1, 1, 122, .75);
+  color: white;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(600, 50, 100, .75);
+  color: white;
+}
+
+button {
+  margin: 2px;
+}
+
+.link {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Extra small devices (phones, 600px and down)*/

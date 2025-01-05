@@ -4,7 +4,7 @@ import { useLoaderData, Form } from 'react-router-dom';
 function Index(props) {
   const reviews = useLoaderData()
   return <>
-    <h1>On The Record__!</h1>
+    <h1>On The Record</h1>
     <h2>Review Something...</h2>
     <Form method="post" action="/create">
       <input className="input" type="text" name="image" placeholder="Image link" />

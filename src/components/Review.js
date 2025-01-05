@@ -4,7 +4,7 @@ function Review({ review }) {
   
   return <>
       <div className="review">
-        <Link className="review-inner" to={`/review/${review.id}`}>
+      <Link className="review-inner" to={`/review/${review.id}`} style={{ textDecoration: 'none' }}>
           <img className="review-img" src={review.image} alt="Cover Art"></img>
           <h4 className="review-details">{review.title_of_work} - {review.artist}</h4>
         </Link>
