@@ -1,6 +1,6 @@
 body {
-text-align: center;
-margin-bottom: 200px;
+  text-align: center;
+  margin: 0px 20px 200px 20px;
 }
 
 /*
@@ -10,30 +10,41 @@ Each grid box should be a square
 Within each square the image of each item should be a maximum width and height
 The name and artist should be at the same height positioned at the bottom of each grid square in each row
 */
-  
+
 .reviews-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 500px); /* Two columns of equal width */
-  gap: 1rem; /* Add spacing between the items */
+  grid-template-columns: repeat(2, 400px);
+  /* Two columns of equal width */
+  gap: 1rem;
+  /* Add spacing between the items */
 }
 
 .review {
-  width: 500px;
-  height: 500px;
-  max-width: 500px;
-  max-height: 500px;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: space-between;*/
+  width: 400px;
+  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
   margin: auto;
+  /*padding: 20px;*/
+  /*margin: 20px;*/
+}
+
+.review-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .review-img {
+  /*height: max-content;
+  width: max-content;*/
   max-width: 90%;
   max-height: 90%;
-  /*max-width: 500px;
-  max-height: 500px;*/
   object-fit: contain;
 }
 
@@ -43,3 +54,40 @@ The name and artist should be at the same height positioned at the bottom of eac
   text-align: center;
   /*width: 100%;*/
 }
+
+/*Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+
+  .review {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+  .reviews-container {
+    grid-template-columns: repeat(2fr 200px);
+  }
+}
+
+/*Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width: 768px) {
+  .reviews-container {
+    grid-template-columns: repeat(2fr 350px);
+  }
+
+  .review {
+    width: auto;
+    /*height: auto;*/
+  }
+}
+
+/*Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {}
+
+/*Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {}
